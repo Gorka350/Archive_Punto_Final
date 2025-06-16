@@ -12,7 +12,9 @@
         
         <div class="collapse navbar-collapse" id="page-nav">
             <ul class="navbar-nav me-auto">
-                {% include collection-list.html %}
+             {% comment %}
+{% include collection-list.html %}
+{% endcomment %}
                 {% for nav in navItems %}
                 {% if nav.stub %}
                 <li class="nav-item">
@@ -33,7 +35,9 @@
                 {%- endfor -%}
             </ul>
             
-            {% include nav-search-lunr.html %}
+           {% comment %}
+{% include collection-list.html %}
+{% endcomment %}
             
         </div>
     </div>
